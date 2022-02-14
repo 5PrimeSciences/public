@@ -6,7 +6,7 @@ task HelloWorld {
 	}
 	
 	command <<<
-		echo ~{primpt}
+		echo ~{prompt}
 	>>>
 	output {
 	    String out=read_string(stdout())
