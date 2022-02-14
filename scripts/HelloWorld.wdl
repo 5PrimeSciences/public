@@ -18,3 +18,7 @@ task HelloWorld {
 		disks: "local-disk 20 HDD"
 	}
 }
+
+workflow HelloWorld_WF{
+	call HelloWorld{}
+}
