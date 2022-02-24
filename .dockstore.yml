@@ -1,9 +1,8 @@
-version: 1.3
+version: 1.2
 workflows:
   - name: HelloWorld
     subclass: WDL
     primaryDescriptorPath: /scripts/HelloWorld.wdl
-
   - name: GARTest
     subclass: WDL
     primaryDescriptorPath: /scripts/gar-test/gar-test.wdl
