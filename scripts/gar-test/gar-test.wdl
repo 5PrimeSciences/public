@@ -11,11 +11,11 @@ task HelloWorld {
 	}
 
 	command <<<
-	  Rscript -e "print(\"~{prompt}\"")"
+		Rscript -e "print(\"~{prompt}\"")"
 	>>>
 
 	output {
-	    String out=read_string(stdout())
+		String out=read_string(stdout())
 	}
 
 	runtime {
