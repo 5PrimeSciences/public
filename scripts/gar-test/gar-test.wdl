@@ -11,7 +11,7 @@ task HelloWorld {
 	}
 
 	command <<<
-		Rscript -e "print(\"~{prompt}\"")"
+		Rscript -e "print(\"~{prompt}\")"
 	>>>
 
 	output {
