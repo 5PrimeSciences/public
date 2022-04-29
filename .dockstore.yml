@@ -6,4 +6,7 @@ workflows:
   - name: GARTest
     subclass: WDL
     primaryDescriptorPath: /scripts/gar-test/gar-test.wdl
+  - name: RunHarmonizer
+    subclass: WDL
+    primaryDescriptorPath: /scripts/RunHarmonizer.wdl
 
