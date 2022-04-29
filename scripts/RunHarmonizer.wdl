@@ -39,6 +39,12 @@ task RunHarmonizer {
 
 workflow RunHarmonizerWF{
 	call RunHarmonizer{}
+
+    output {
+           File dump_dbsnps = RunHarmonizer.dump_dbsnps
+           File error_summary = RunHarmonizer.error_summary
+           File h_file = RunHarmonizer.h_file
+    }
 }
 
 
