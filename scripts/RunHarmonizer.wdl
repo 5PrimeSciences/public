@@ -14,10 +14,13 @@ task RunHarmonizer {
 	
 	command <<<
 
+        set -euo pipefail
+        
 		# if branch is defined, git checkout that branch.
 		#if [ "" != "~{select_first([branch_name,''])}" ]; then
 		#	git checkout -b ~{branch_name}
 		#fi
+        ln -s ~{raw_data}
 		
 		Rscript --vanilla ~{harmonizer_rscript} ~{raw_json} ~{rsid_path} ~{dbsnp_vcf}
 
