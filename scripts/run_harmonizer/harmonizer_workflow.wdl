@@ -24,6 +24,14 @@ task run_harmonizer {
     File error_summary = "h_error_summary.json"
     File h_file = "chunks_all_h.txt"
   }
+  
+  runtime {
+    cpu:32
+    bootDiskSizeGb: 250
+    disks: "local-disk 500 SSD"
+    memory: "64G"
+    docker: "gcr.io/primesciences-storage/base-analytics:latest"
+  }
 
 }
 
