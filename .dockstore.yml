@@ -8,5 +8,5 @@ workflows:
     primaryDescriptorPath: /scripts/gar-test/gar-test.wdl
   - name: RunHarmonizer
     subclass: WDL
-    primaryDescriptorPath: /scripts/RunHarmonizer.wdl
+    primaryDescriptorPath: /scripts/run_harmonizer/harmonizer_workflow.wdl
 
