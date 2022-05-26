@@ -30,7 +30,7 @@ task run_harmonizer {
     bootDiskSizeGb: 250
     disks: "local-disk 500 SSD"
     memory: "64G"
-    docker: "gcr.io/primesciences-storage/base-analytics:latest"
+    docker: "northamerica-northeast1-docker.pkg.dev/general-345619/harmonizer-docker/harmonizer-rapid:main-1651680185"
   }
 
 }
