@@ -30,7 +30,7 @@ task run_harmonizer {
     bootDiskSizeGb: 250
     disks: "local-disk 500 SSD"
     memory: "64G"
-    docker: "northamerica-northeast1-docker.pkg.dev/fiveps-vpc-host-nonprod/jc-harmonizer-may2022/jc-harmonizer-image:latest"
+    docker: "northamerica-northeast1-docker.pkg.dev/general-345619/harmonizer-docker/harmonizer-rapid:main-1651680185"
   }
 
 }
