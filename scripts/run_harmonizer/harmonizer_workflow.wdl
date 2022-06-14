@@ -16,7 +16,7 @@ task run_harmonizer {
 
   command <<<
     ln -s ~{raw_data}
-    Rscript --vanilla ~{harmonizer_rscript} ~{raw_json} ~{rsid_path} ~{dbsnp_vcf}
+    Rscript ~{harmonizer_rscript} ~{raw_json} ~{rsid_path} ~{dbsnp_vcf}
   >>>
 
   output {
